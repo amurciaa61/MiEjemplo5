@@ -1,0 +1,36 @@
+body {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35vw;
+    height: 100vh;
+    margin: auto;
+}
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    border: solid 2px #053fba;
+    background: linear-gradient(to bottom right, #0243BB,#0588FE,#24B4FD,lightblue);
+    border-radius: 12px;
+}
+.tabla {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.tabla th, td{
+    border: 1px solid black;
+}
+th {font-size: larger;
+
+}
+.menor25{
+    background: #9cff88;
+}
+.nomenor25{
+    background: #ffc0eb;
+}
