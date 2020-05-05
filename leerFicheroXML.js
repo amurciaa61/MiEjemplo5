@@ -1,3 +1,5 @@
+$(function()
+{
 function gestionarFicheroXML(xmlDoc){
 	let texto = "<table><tr><th>Titulo</th><th>Autor</th></tr>";
 	let titulos = xmlDoc.getElementsByTagName("titulo");
@@ -16,7 +18,10 @@ function gestionarFicheroXML(xmlDoc){
 	}
 	texto += "</table>";
 	document.getElementById('tablalibros').innerHTML = texto;	
+	$(".columna1").css({"font-weight": "bold"});
 }
 window.addEventListener("load", function(event) {
     let xmlDoc = loadLDocA("libros.xml","xml");
+})
+
 })
